@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/content_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context="com.example.wumpusgamemadkhaled.MainActivity"
+	tools:showIn="@layout/activity_main">
+
+	<com.example.wumpusgamemadkhaled.NonActivityClasses.MyRelativeLayout
+		android:id="@+id/myRelativeLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_alignParentTop="true">
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/recyclerView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scrollbars="vertical">
+
+		</android.support.v7.widget.RecyclerView>
+
+	</com.example.wumpusgamemadkhaled.NonActivityClasses.MyRelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/myRelativeLayout"
+		android:orientation="horizontal">
+
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_alignParentBottom="true"
+			android:layout_weight="1">
+
+			<Button
+				android:id="@+id/buttonShotArrow"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="10dp"
+				android:text="Shot Arrow"
+				android:textAllCaps="false"/>
+
+			<Button
+				android:id="@+id/buttonGrabGold"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="10dp"
+				android:layout_toRightOf="@id/buttonShotArrow"
+				android:text="Grab Gold"
+				android:textAllCaps="false"/>
+
+			<Button
+				android:id="@+id/buttonReset"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_above="@id/buttonShotArrow"
+				android:text="Reset"
+				android:textAllCaps="false"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1">
+
+			<ImageButton
+				android:id="@+id/imageButtonArrowRight"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/arrow_right"/>
+
+			<ImageButton
+				android:id="@+id/imageButtonArrowDown"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_centerHorizontal="true"
+				android:src="@drawable/arrow_down"/>
+
+			<ImageButton
+				android:id="@+id/imageButtonArrowLeft"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/arrow_left"/>
+
+			<ImageButton
+				android:id="@+id/imageButtonArrowUp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:src="@drawable/arrow_up"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>

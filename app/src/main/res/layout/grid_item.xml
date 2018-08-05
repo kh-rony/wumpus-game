@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/gridItem"
+	android:layout_width="match_parent"
+	android:layout_height="70dp"
+	android:layout_margin="1dp"
+	android:background="@android:color/holo_green_dark"
+	tools:context="com.example.wumpusgamemadkhaled.MainActivity">
+
+	<ImageView
+		android:id="@+id/imageViewBadSmell"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:src="@drawable/bad_smell1"
+		android:visibility="invisible"/>
+
+	<ImageView
+		android:id="@+id/imageViewBreeze"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentTop="true"
+		android:src="@drawable/breeze1"
+		android:visibility="invisible"/>
+
+	<ImageView
+		android:id="@+id/imageViewGold"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:src="@drawable/gold1"
+		android:visibility="invisible"/>
+
+	<ImageView
+		android:id="@+id/imageViewUserOrWumpusOrPit"
+		android:layout_width="25dp"
+		android:layout_height="25dp"
+		android:layout_centerInParent="true"
+		android:src="@drawable/user_right"
+		android:visibility="invisible"/>
+
+</RelativeLayout>
